@@ -1,3 +1,16 @@
 .container .jumbotron {
   border-radius: 40px;
 }
+
+.pelota {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: red;
+  transition: 1s ease;
+}
+
+.pelota:hover {
+  width: 200px;
+  height: 200px;
+}
