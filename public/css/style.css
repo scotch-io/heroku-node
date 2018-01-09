@@ -1,5 +1,8 @@
-.container .jumbotron {
-  border-radius: 40px;
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .pelota {
@@ -8,6 +11,10 @@
   border-radius: 50%;
   position: absolute;
   transition: 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 .pelota.a {
@@ -23,7 +30,8 @@
 .canasta {
   border: 1px solid red;
   position: relative;
-  height: 200px;
+  height: 100px;
+  width: 100%;
 }
 
 .canasta:hover .pelota.a {
