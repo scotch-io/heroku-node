@@ -1,2 +1,56 @@
-body 						{ padding-top:50px; }
-.container .jumbotron   	{ border-radius:40px; }
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.pelota {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  transition: 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.pelota.a {
+  background: red;
+  left: 0;
+}
+
+.pelota.b {
+  background: blue;
+  right: 0;
+}
+
+.canasta {
+  border: 1px solid red;
+  position: relative;
+  height: 100px;
+  width: 100%;
+}
+
+.canasta:hover .pelota.a {
+  left: calc(50% - 100px);
+}
+
+.canasta:hover .pelota.b {
+  right: calc(50% - 100px);
+}
+
+.pelota {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: red;
+  transition: 1s ease;
+}
+
+.pelota:hover {
+  width: 200px;
+  height: 200px;
+}
