@@ -1,3 +1,35 @@
 .container .jumbotron {
   border-radius: 40px;
 }
+
+.pelota {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  transition: 1s ease;
+}
+
+.pelota.a {
+  background: red;
+  left: 0;
+}
+
+.pelota.b {
+  background: blue;
+  right: 0;
+}
+
+.canasta {
+  border: 1px solid red;
+  position: relative;
+  height: 200px;
+}
+
+.canasta:hover .pelota.a {
+  left: calc(50% - 100px);
+}
+
+.canasta:hover .pelota.b {
+  right: calc(50% - 100px);
+}
