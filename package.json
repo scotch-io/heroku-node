@@ -1,9 +1,9 @@
 {
   "name": "node-sample",
   "description": "Our sample Node to Heroku app",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "ejs": "^1.0.0",
