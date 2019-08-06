@@ -3,23 +3,42 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Node Sample App</title>
+	<meta name="google-signin-client_id" content="458468258261-4kr7pq9cam9b6locgpovkdg46d4e155f.apps.googleusercontent.com">
 
 	<!-- CSS -->
 	<!-- load bootstrap and our own personal stylesheet -->
 	<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/superhero/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/myscript.js"></script>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
 
 </head>
 <body>
 
 <div class="container">
 	<div class="jumbotron">
-		<h2>Welcome to the BETA MBSA App</h2>
-		<p>There is currently limited functionalities. </p>
+		<h2>Welcome to the Beta MBSA App!</h2>
+		<p style="font-size: 16px;">Currently, there are limited functionalities. Please excuse the construction! </p>
 		<a href="/signin" class="btn btn-primary btn-sm">Attendance Sign-in</a>
 		<a href="/" class="btn btn-primary btn-sm">Unsubscribe</a>
 
+
+		<div class="g-signin2" data-onsuccess="onSignIn"></div>
+		<br>
+		Hey, <span id="yourName" href="#"></span> Nice seeing you here!
+		<br>
+		<br>
+		<a class="btn btn-primary btn-med" href="#" onclick="signOut();">Sign out</a>
+		<script>
+		  function signOut() {
+		    var auth2 = gapi.auth2.getAuthInstance();
+		    auth2.signOut().then(function () {
+		      console.log('User signed out.');
+		    });
+		  }
+		</script>
 	</div>
+
 </div>
 
 </body>

@@ -1,2 +1,11 @@
 body 						{ padding-top:50px; }
 .container .jumbotron   	{ border-radius:40px; }
+
+.btn-sign-in {
+  background: #fff;
+  font: 16px/22px Roboto;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  cursor: pointer;
+}

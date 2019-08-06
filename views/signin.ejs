@@ -17,22 +17,31 @@
 		<h2>MBSA Info Session Sign-in</h2>
 		<p>Welcome to MBSA's Fall 2019 info session! We have some exciting events planned, so make sure you sign up to ensure you're getting accounted for!</p>
 
-		<form>
-			First name: <br>
+		<form style="line-height:30px;">
+			<!-- TODO: add action_page script and submit button -->
+			<b>First name:</b> <br>
 			<input type="text" name="firstname"><br>
-			Last name: <br>
-			<input type = "text" name="lastname">
-			Grade: <br>
+			<b>Last name:</b> <br>
+			<input type = "text" name="lastname"><br>
+			<b>Grade:</b> <br>
 				<input type="radio" name="grade" value="Freshman">Freshman<br>
 				<input type="radio" name="grade" value="Sophomore">Sophomore<br>
 				<input type="radio" name="grade" value="Junior">Junior<br>
-				<input type="radio" name="grade" value="Freshman">Senior<br> 
+				<input type="radio" name="grade" value="Freshman">Senior<br>
+			<b> Major:</b> <br>
+				<input type="checkbox" name="major" value="undeclared">Undeclared<br>
+				<input type="checkbox" name="major" value="undeclared">Accounting<br>
+				<input type="checkbox" name="major" value="undeclared">Information Systems<br>
+				<input type="checkbox" name="major" value="undeclared">Marketing<br>
+				<input type="checkbox" name="major" value="undeclared">Supply Chain<br>
+				<input type="checkbox" name="major" value="undeclared">Finance<br>
+				Other <input type="text" name="major"><br><br>
 
-
+			<input type="submit" class="btn btn-secondary btn-med" value="Submit"><br>
 		</form>
-
-		<a href="#attendance" class="btn btn-primary btn-sm">Attendance Sign-in</a>
-		<a href="#unsubscribe" class="btn btn-primary btn-sm">Unsubscribe</a>
+		<br>
+		<a href="/" class="btn btn-primary btn-sm">Home</a>
+		<a href="/unsubscribe" class="btn btn-primary btn-sm">Unsubscribe</a>
 
 	</div>
 </div>
