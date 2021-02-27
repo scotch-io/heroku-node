@@ -1,5 +1,4 @@
 var express = require('express');
-var socket = require("socket.io");
 var app = express();
 
 // set the port of our application
